@@ -2,6 +2,6 @@
 
   aws configure
   
-  aws eks --region us-west-2 describe-cluster --name hksCluster --query cluster.status
+  aws eks --region us-east-1 describe-cluster --name demoCluster --query cluster.status
 
-  aws eks --region us-west-2 update-kubeconfig --name hksCluster
+  aws eks --region us-east-1 update-kubeconfig --name demoCluster
