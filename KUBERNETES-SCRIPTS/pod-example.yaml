@@ -1,0 +1,10 @@
+apiVersion: v1          # The version of the Kubernetes API to use for this object.
+kind: Pod               # The type of Kubernetes object. Here it's a Pod.
+metadata:               # Metadata about the Pod, such as its name and labels.
+  name: my-pod          # The name of the Pod. Must be unique within a namespace.
+  labels:               # Labels are key-value pairs to categorize and organize Pods.
+    app: my-app         # Label to categorize this Pod as part of 'my-app'.
+spec:                   # The specification for the Pod, detailing its containers and other settings.
+  containers:           # List of containers that will run in this Pod.
+    - name: my-container # The name of the container. Must be unique within the Pod.
+      image: nginx:latest # The Docker image to use for this container. Here, it's the latest version of Nginx.
